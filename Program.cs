@@ -105,3 +105,29 @@ void PrintArray()
 
 ReversArray();
 PrintArray();
+
+
+Console.WriteLine("\nTask 45");
+// Напишите программу, которая будет создавать копию заданного массива с помощью поэлементного копирования.
+
+int[] array1 = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int[] array2 = new int[array1.Length];
+
+void CopyArray()
+{
+    for (int i=0; i<array1.Length; i++)
+    {
+        array2[i] = array1[i];
+    } 
+}
+
+void PrintCopyArray()
+{
+    for (int i=0; i<array2.Length; i++)
+    {
+        System.Console.Write(array2[i] + " ");
+    }
+}
+
+CopyArray();
+PrintCopyArray();
