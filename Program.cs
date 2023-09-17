@@ -87,7 +87,7 @@ int[] array = new int[] {1, 2, 3, 4, 5};
 
 void ReversArray()
 {
-    for (int i=0; i<array.Length; i++)
+    for (int i=0; i<array.Length/2; i++)
     {   
         int temp = array[i];
         array[i] = array[array.Length-1-i];
